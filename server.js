@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/songDescription/', createProxyMiddleware({
-  target: 'http://3.131.95.228:2001',
+  target: 'http://3.131.95.228:2001/',
   changeOrigin: true
 }));
 
